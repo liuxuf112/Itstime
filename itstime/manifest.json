@@ -1,0 +1,24 @@
+{
+    
+    "name": "itstime",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "description": "Itstime demo",
+    "browser_action":
+    {
+        "default_icon": {"1": "1.png"},   
+        "default_popup": "popup.html",
+        "default_title": "Itstime"   
+    },
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"] 
+        }
+
+    ],
+    "background":{
+        "script": ["background.js"]
+    }
+
+}
